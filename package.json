@@ -1,0 +1,15 @@
+{
+  "name": "fmt-trust-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "lint": "node --check app.js && node --check build.mjs",
+    "test": "npm run lint",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.105.0"
+  }
+}
