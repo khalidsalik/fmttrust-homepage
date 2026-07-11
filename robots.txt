@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fmttrust.com/sitemap.xml
+Sitemap: https://fmttrust.com/sitemap.xml

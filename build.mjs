@@ -11,6 +11,7 @@ const files = [
   "_headers",
   "_redirects",
   "robots.txt",
+  "CNAME",
   "sitemap.xml",
   "assets/fmt-logo.png",
   "assets/fmt-donor-portal-share.png",
