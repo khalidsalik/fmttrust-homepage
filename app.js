@@ -47,4 +47,10 @@ aboutToggle?.addEventListener("click", () => {
 
   aboutToggle.setAttribute("aria-expanded", String(!isExpanded));
   aboutPanel.hidden = isExpanded;
+
+  if (!isExpanded) {
+    requestAnimationFrame(() => {
+      aboutPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 });
