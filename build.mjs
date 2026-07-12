@@ -15,6 +15,7 @@ const files = [
   "sitemap.xml",
   "assets/fmt-logo.png",
   "assets/fmt-donor-portal-share.png",
+  "assets/fmt-homepage-share.png",
   "assets/islamic-future-portal.png",
   "assets/seettu-kulukkal.svg",
   "assets/vaaris-urimai.svg"
