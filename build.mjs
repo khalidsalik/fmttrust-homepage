@@ -16,6 +16,7 @@ const files = [
   "assets/fmt-logo.png",
   "assets/fmt-donor-portal-share.png",
   "assets/fmt-homepage-share.png",
+  "assets/fmt-homepage-share-v2.jpg",
   "assets/islamic-future-portal.png",
   "assets/seettu-kulukkal.svg",
   "assets/vaaris-urimai.svg"
