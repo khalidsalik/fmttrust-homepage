@@ -49,8 +49,8 @@ if (brandLogoStage && !reduceMotion.matches) {
     const x = (event.clientX - bounds.left) / bounds.width - 0.5;
     const y = (event.clientY - bounds.top) / bounds.height - 0.5;
 
-    brandLogoStage.style.setProperty("--logo-tilt-x", `${(-y * 12).toFixed(2)}deg`);
-    brandLogoStage.style.setProperty("--logo-tilt-y", `${(x * 12).toFixed(2)}deg`);
+    brandLogoStage.style.setProperty("--logo-tilt-x", `${(-y * 18).toFixed(2)}deg`);
+    brandLogoStage.style.setProperty("--logo-tilt-y", `${(x * 18).toFixed(2)}deg`);
   });
 
   brandLogoStage.addEventListener("pointerleave", () => {
