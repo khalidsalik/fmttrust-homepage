@@ -23,6 +23,7 @@ const applications = [
 ];
 
 const applicationGrid = document.querySelector("#applicationGrid");
+const brandLogoStage = document.querySelector("#brandLogoStage");
 
 applicationGrid.innerHTML = applications
   .map(
@@ -39,3 +40,21 @@ applicationGrid.innerHTML = applications
     `
   )
   .join("");
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (brandLogoStage && !reduceMotion.matches) {
+  brandLogoStage.addEventListener("pointermove", (event) => {
+    const bounds = brandLogoStage.getBoundingClientRect();
+    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+
+    brandLogoStage.style.setProperty("--logo-tilt-x", `${(-y * 12).toFixed(2)}deg`);
+    brandLogoStage.style.setProperty("--logo-tilt-y", `${(x * 12).toFixed(2)}deg`);
+  });
+
+  brandLogoStage.addEventListener("pointerleave", () => {
+    brandLogoStage.style.setProperty("--logo-tilt-x", "0deg");
+    brandLogoStage.style.setProperty("--logo-tilt-y", "0deg");
+  });
+}
