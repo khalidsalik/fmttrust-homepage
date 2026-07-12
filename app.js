@@ -23,6 +23,8 @@ const applications = [
 ];
 
 const applicationGrid = document.querySelector("#applicationGrid");
+const aboutToggle = document.querySelector("#aboutToggle");
+const aboutPanel = document.querySelector("#aboutPanel");
 
 applicationGrid.innerHTML = applications
   .map(
@@ -39,3 +41,10 @@ applicationGrid.innerHTML = applications
     `
   )
   .join("");
+
+aboutToggle?.addEventListener("click", () => {
+  const isExpanded = aboutToggle.getAttribute("aria-expanded") === "true";
+
+  aboutToggle.setAttribute("aria-expanded", String(!isExpanded));
+  aboutPanel.hidden = isExpanded;
+});
