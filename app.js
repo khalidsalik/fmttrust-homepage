@@ -29,7 +29,7 @@ const aboutPanel = document.querySelector("#aboutPanel");
 applicationGrid.innerHTML = applications
   .map(
     (app) => `
-      <a class="app-card" href="${app.url}" aria-label="Open ${app.name}">
+      <a class="app-card" href="${app.url}" target="_blank" rel="noopener noreferrer" aria-label="Open ${app.name}">
         <span class="logo-frame">
           <img src="${app.logo}" alt="${app.alt}" width="76" height="76">
         </span>
