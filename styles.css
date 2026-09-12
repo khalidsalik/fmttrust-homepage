@@ -200,6 +200,28 @@ h1 {
   color: #ffffff;
 }
 
+.support-line {
+  margin: -6px 0 0;
+  color: rgba(147, 174, 166, 0.82);
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.support-line a {
+  color: rgba(245, 255, 251, 0.9);
+  text-decoration: underline;
+  text-decoration-color: rgba(45, 242, 180, 0.42);
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.support-line a:hover,
+.support-line a:focus-visible {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 200, 87, 0.76);
+}
+
 .about-panel {
   width: min(720px, 100%);
   border: 1px solid rgba(125, 255, 219, 0.16);
